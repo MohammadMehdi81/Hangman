@@ -98,7 +98,7 @@ class Main:
             while player1.guess_validation_incomplete:
                 player1.guess()
                 game.validate_user_input(player1)
-                game.check_answer_update_lives(word_bank,player1)
+            game.check_answer_update_lives(word_bank, player1)
             print(word_bank.current_word_display)
             player1.guess_validation_incomplete = True
             word_bank.check_solve()
