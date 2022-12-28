@@ -58,7 +58,7 @@ class Processes:
         pass
 
     def validate_user_input(self, player):
-        expression=re.match('(?i)[a-a]',player.answer)
+        expression=re.match('(?i)[a-z]',player.answer)
         if expression == None or len(player.answer)>1:
             print('\nPlease guess a single alphabet')
         else:
