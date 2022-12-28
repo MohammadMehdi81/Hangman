@@ -52,7 +52,6 @@ class Player:
     def guess(self):
         self.answer = input('Guess a letter: ')
 
-
 class Processes:
     def __init__(self):
         pass
@@ -93,6 +92,8 @@ class Main:
         
         word_bank.pick_topic()
         word_bank.pick_word()
+
+        player1.lives = len(word_bank.current_word) * 3
 
         while word_bank.not_solved and player1.lives > 0:
             while player1.guess_validation_incomplete:
